@@ -1,0 +1,266 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kong Yang</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="sidebar">
+        <div class="inner-sidebar">
+            <div class="person">
+                <img class="dp-pic" src="./assets/images/sidenav-pic.jpeg" alt="dp">
+            </div>
+            <div class="person-content">
+                <h2>Kong Yang</h2>
+                <div class="sub">Full-Stack Developer</div>
+            </div>
+            <ul id="sidenav-contents">
+                <li id="sidenav-sec">About Me</li>
+                <li id="sidenav-sec">Portfolio</li>
+                <li id="sidenav-sec">Skills</li>
+                <li id="sidenav-sec">Contact Me</li>
+                <li id="sidenav-sec" style="padding-top: 40px;">
+                    <a href="https://drive.google.com/file/d/1WMGOi6dHFaoTiMNlz_waZW8g1mNTYSa9/view?usp=sharing" target="blank">
+                        Resume
+                    </a>
+                </li>
+            </ul>
+            <div class="sidenav-social">
+                <p>Connect With Me</p>
+                <div class="i-social">
+                    <a href="mailto:kong_yang828@hotmail.com" target="blank"><img src="./assets/images/icons/outlook.png" alt=""></a>
+                    <a href="https://www.linkedin.com/in/kong-yang-393a35182/" target="blank"><img src="./assets/images/icons/linkedin.png" alt=""></a>
+                    <a href="https://github.com/kyang0626" target="blank"><img src="./assets/images/icons/github.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-inner">
+        <div class="intro">
+            <div class="inner-pic-holder"></div>
+            <div class="inner-pic-holder"> <img id="inner-pic" src="./assets/images/grad-pic.jpg" alt=""></div>
+            <div class="inner-description">
+            <p style="font-style: italic;">HTML is the noun—the subject that the sentence is all about, CSS is the adjective, dressing up that noun to make it more attractive, 
+                and JavaScript is the verb—the interactions and animations on the website
+            </p>
+        </div>
+        <div class="inner-pic-holder"><br></div>
+        </div>
+        <section class="about-me">
+            <p class="section-header">Who am I?</p>
+            <label for="aboutme-label" id="section-label">About Me</label>
+            <div class="about-content">
+            <div class="quote"> | Full-Stack Developer with a background in Kinesiology</div>
+                <p class="bio">
+                    Graduated from the <span style="color: rgb(29, 51, 106); font-weight: bold;">University of North Carolina, Greensboro</span> in
+                    2016 with a
+                    <span style="color: rgb(198, 198, 29); font-weight: bold;">Bachelor of Science
+                        degree in Sports Medicine.</span>  After upon completion, I have decided to take some time
+                    off to work and put some thoughts to my decision to see whether if I really want to continue my eduction and pursue a career in the health and fitness field 
+                    or find a new career path. 
+                    During the time, I work in manufacturing jobs such as <strong>GKN</strong>  and <strong>Corning Inc.</strong> while still figuring out
+                    my pursuit.
+                    <br>
+                    <br>
+                    Thereafter, I was introduce to coding by a close friend who is a web developer and he recommended me to give it a try with web development, and maybe it can change my
+                    life like it did his.
+                    I took interest, and decided to search online for coding bootcamps.
+                    I have decided to change my career and pursue coding. I attended the 
+                        <strong style="color: rgb(23, 120, 23);">UNCC Full-Time Full Stack Developer</strong> bootcamp in 2019,
+                    with the aspiration of becoming a software engineer/web developer after graduation.
+                    <br>
+                    <span *ngIf="fullBioShow == false" class="show-more" (click)="fullBioShow = !fullBioShow">Show More</span>
+                    <span *ngIf="fullBioShow == true" class="show-less" (click)="fullBioShow = !fullBioShow">Show Less</span>
+                    <br>
+                    <span class="hide-p" *ngIf="fullBioShow == true">
+                        About 3 months after completing my bootcamp, I took an opportunity with <strong style="color: rgb(39, 109, 173);">Cognixia's JuMP </strong>program , which is a 6 weeks 
+                        hire-train-deploy opportunity that helps students  with a computer science degree or background further their knowledge and get a job. I have completed the program, 
+                        but unfortunately, I was not one of the chosen 
+                        candidates for their clients. 
+                        <br>
+                        <br>
+                        <span style="position: relative; left: 60px; text-shadow: black; color: gray; font-weight: bold; font-style: italic; font-size: 16px; letter-spacing: 2px;">FAST FORWARD, 2020 . .  .  .</span>
+                        <br>
+                        <br>
+                        Currently, I am looking for an entry-junior software development/engineering full-time or contract opportunities, preferably in the Charlotte and Raleigh, NC area.
+                        While actively seeking for opportunities, I am advancing my knowledge at home using <br> 
+                        <span style="font-weight: bold;"><img src="../../assets/icons/i-udemy.png" alt="" style="padding: 0 6px;">Udemy</span> 
+                        and <span style="font-weight: bold;"><img src="../../assets/icons/i-youtube.png" style="padding: 0 6px;">YouTube</span> as my learning resouces.
+                        I am currently working on advancing my previous skills in  <span style="font-weight: bold; font-style: italic;">C#, ASP.NET CORE, Angular, and MySQL</span> .
+                    </span> 
+                </p>
+            </div>
+        </section>
+        <div class="bg2-mobile">
+            <div class="section-separator"></div>
+            <div class="section-separator"></div>
+            <div class="section-separator"></div>
+        </div>
+        <section class="portfolio">
+            
+        </section>
+        <div class="bg2-mobile">
+            <div class="section-separator2"></div>
+            <div class="section-separator2"></div>
+            <div class="section-separator2"></div>
+        </div>
+        <section class="skills">
+            <p class="section-header">My Specialty</p>
+            <label for="skills" id="section-label">My Skills</label>
+            <div class="skills-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>Skills that I have used before or good to work with.</p>
+                        </div>
+                        <div class="col-md-6" id="skills">
+                            <div class="progress-wrap">
+                                <h3>C#</h3>
+                                <div class="progress">
+                                    <div class="progress-bar skill-1">
+                                        <span>80%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6" id="skills">
+                            <div class="progress-wrap">
+                                <h3>ASP.NET Core</h3>
+                                <div class="progress">
+                                    <div class="progress-bar skill-2">
+                                        <span>60%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6" id="skills">
+                            <div class="progress-wrap">
+                                <h3>Angular</h3>
+                                <div class="progress">
+                                    <div class="progress-bar skill-3">
+                                        <span>50%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6" id="skills">
+                            <div class="progress-wrap">
+                                <h3>HTML5</h3>
+                                <div class="progress">
+                                    <div class="progress-bar skill-4">
+                                        <span>90%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6" id="skills">
+                            <div class="progress-wrap">
+                                <h3>MySQL</h3>
+                                <div class="progress">
+                                    <div class="progress-bar skill-5">
+                                        <span>70%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6" id="skills">
+                            <div class="progress-wrap">
+                                <h3>CSS3</h3>
+                                <div class="progress">
+                                    <div class="progress-bar skill-6">
+                                        <span>90%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6" id="skills">
+                            <div class="progress-wrap">
+                                <h3>JavaScript</h3>
+                                <div class="progress">
+                                    <div class="progress-bar skill-7">
+                                        <span>70%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="bg2-mobile">
+                <div class="section-separator"></div>
+                <div class="section-separator"></div>
+                <div class="section-separator"></div>
+            </div>      
+            <section class="contact-me">
+                <p class="section-header">Connect with Me</p>
+                <label class="content" id="section-label">Contact</label>
+                <div class="inner-content">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-5 col-lg-5 col-md-12">
+                                <p><img src="assets/images/icons/linkedin.png" alt="" class="contact-icon"> <a href="https://www.linkedin.com/in/kong-yang-393a35182/" target="blank">kongyang393a35182</a></p>
+                                <br>
+                                <p><img src="assets/images/icons/outlook.png" alt="" class="contact-icon"><a href="mailto:kong_yang828@hotmail.com" target="blank">@kongyang828</a></p>
+                                <br>
+                                <p><img src="assets/images/icons/github.png" alt="" class="contact-icon"> <a href="https://github.com/kyang0626" target="blank">kyang0626</a></p>
+                            </div>
+                            <div class="col-xl-7 col-lg-7 col-md-12">
+                                <form (ngSubmit)="submitForm(contactForm.value)" #contactForm="ngForm" >
+                                    <div class="form-group">
+                                        <label for="nameInput">Name</label>
+                                        <input 
+                                            type="text" 
+                                            class="form-control" 
+                                            id="name" 
+                                            name="name" 
+                                            placeholder="ex. John Doe" 
+                                            ngModel
+                                            required
+                                            #name="ngModel"
+                                        >
+                                        <span class="help-block" *ngIf="!name.valid && name.touched" style="color: red;">Please enter a name!</span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputEmail">Email address</label>
+                                        <input 
+                                            type="text" 
+                                            class="form-control" 
+                                            id="email" 
+                                            name="email" 
+                                            placeholder="ex. johnny32@gmail.com" 
+                                            ngModel
+                                            required
+                                            email
+                                            #email="ngModel"
+                                        >
+                                        <span style="color: red;" class="help-block" *ngIf="!email.valid && email.touched">Please enter a valid email!</span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="subjectInput">Subject</label>
+                                        <input 
+                                            type="text" 
+                                            class="form-control" 
+                                            id="subject" 
+                                            name="subject" 
+                                            placeholder="ex. Hello" 
+                                            ngModel>
+                                        </div>
+                                    <div class="form-group">
+                                        <textarea name="message" class="textarea" placeholder="Message" ngModel></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary" [disabled]="!contactForm.valid">Submit</button>
+                                    </form>
+                            </div>
+                        </div>
+                    </div>   
+                </div>
+            </div> 
+        </section>
+    </div>
+</body>
+</html>
+
