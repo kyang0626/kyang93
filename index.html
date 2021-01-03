@@ -12,17 +12,17 @@
     <div class="sidebar">
         <div class="inner-sidebar">
             <div class="person">
-                <img class="dp-pic" src="./assets/images/sidenav-pic.jpeg" alt="dp">
+                <img class="dp-pic" src="./assets/images/avatar-reedit.png" alt="dp">
             </div>
             <div class="person-content">
                 <h2>Kong Yang</h2>
                 <div class="sub">Full-Stack Developer</div>
             </div>
             <ul id="sidenav-contents">
-                <li id="sidenav-sec">About Me</li>
-                <li id="sidenav-sec">Portfolio</li>
-                <li id="sidenav-sec">Skills</li>
-                <li id="sidenav-sec">Contact Me</li>
+                <li id="sidenav-sec"><a class="nav-link" href="#aboutme">About Me</a></li>
+                <li id="sidenav-sec"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                <li id="sidenav-sec"><a class="nav-link" href="#skills">Skills</a></li>
+                <li id="sidenav-sec"><a class="nav-link" href="#contactme">Contact Me</a></li>
                 <li id="sidenav-sec" style="padding-top: 40px;">
                     <a href="https://drive.google.com/file/d/1WMGOi6dHFaoTiMNlz_waZW8g1mNTYSa9/view?usp=sharing" target="blank">
                         Resume
@@ -50,7 +50,7 @@
         </div>
         <div class="inner-pic-holder"><br></div>
         </div>
-        <section class="about-me">
+        <section class="about-me" id="aboutme">
             <p class="section-header">Who am I?</p>
             <label for="aboutme-label" id="section-label">About Me</label>
             <div class="about-content">
@@ -100,7 +100,7 @@
             <div class="section-separator"></div>
             <div class="section-separator"></div>
         </div>
-        <section class="portfolio">
+        <section class="portfolio" id="portfolio">
             
         </section>
         <div class="bg2-mobile">
@@ -108,7 +108,7 @@
             <div class="section-separator2"></div>
             <div class="section-separator2"></div>
         </div>
-        <section class="skills">
+        <section class="skills" id="skills">
             <p class="section-header">My Specialty</p>
             <label for="skills" id="section-label">My Skills</label>
             <div class="skills-content">
@@ -190,14 +190,14 @@
                     </div>
                 </div>
             </section>
-            <div class="bg2-mobile">
+        <div class="bg2-mobile">
                 <div class="section-separator"></div>
                 <div class="section-separator"></div>
                 <div class="section-separator"></div>
-            </div>      
-            <section class="contact-me">
-                <p class="section-header">Connect with Me</p>
-                <label class="content" id="section-label">Contact</label>
+        </div>      
+        <section class="contact-me" id="contactme">
+            <p class="section-header">Connect with Me</p>
+            <label class="content" id="section-label">Contact</label>
                 <div class="inner-content">
                     <div class="container">
                         <div class="row">
@@ -222,7 +222,6 @@
                                             required
                                             #name="ngModel"
                                         >
-                                        <span class="help-block" *ngIf="!name.valid && name.touched" style="color: red;">Please enter a name!</span>
                                     </div>
                                     <div class="form-group">
                                         <label for="inputEmail">Email address</label>
@@ -237,7 +236,6 @@
                                             email
                                             #email="ngModel"
                                         >
-                                        <span style="color: red;" class="help-block" *ngIf="!email.valid && email.touched">Please enter a valid email!</span>
                                     </div>
                                     <div class="form-group">
                                         <label for="subjectInput">Subject</label>
@@ -253,14 +251,21 @@
                                         <textarea name="message" class="textarea" placeholder="Message" ngModel></textarea>
                                     </div>
                                     <button type="submit" class="btn btn-primary" [disabled]="!contactForm.valid">Submit</button>
-                                    </form>
+                                </form>
                             </div>
                         </div>
                     </div>   
                 </div>
-            </div> 
         </section>
+        <div class="footer">
+            <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+        </div>   
     </div>
+   
+    <!-- Bootstrap JS cdn -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
 

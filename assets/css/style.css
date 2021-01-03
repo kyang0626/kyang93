@@ -1,12 +1,13 @@
+/* Theme color:  rgb(184, 15, 10
 /* =========== Sidenav =================*/
 .sidebar {
     background: 
         linear-gradient(
-        rgba(204, 7, 7, 0.95),
-        rgba(170, 11, 11, 0.85),  
-        rgba(67, 8, 8, 0.8)
+        rgba(184, 15, 10, 1),
+        rgba(162, 15, 10, 0.8),  
+        rgba(138, 0, 0, 0.7)
         ),
-        url("https://upload.wikimedia.org/wikipedia/commons/0/0b/Skyline_of_Charlotte_2016.jpg");
+        url("../images/bg/charlotte-bg-blkWhite.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     top: 0;
@@ -45,7 +46,11 @@
 
 .inner-sidebar ul {
     padding-top: 40px;
-    line-height: 25px;
+    line-height: 20px;
+}
+
+.inner-sidebar li a {
+    padding: 0;
 }
 
 .inner-sidebar li {
@@ -54,18 +59,22 @@
     margin: 8px;
     font-size: 14px;
     font-weight: 200;
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba(255, 255, 255, 0.8);
 }
 
 .inner-sidebar #sidenav-sec:hover {
-    color: white;
-    font-size: 16px;
+    color: white !important;
+    font-size: 18px;
     cursor: pointer;
 }
 
 .inner-sidebar a {
     text-decoration: none;
     color:rgba(255, 255, 255, 0.9);
+}
+
+.inner-sidebar a:hover {
+    color: white !important;
 }
 
 .sidenav-social {
@@ -91,17 +100,18 @@
     height: 100%;
     width: 80%;
     background: white;
+    position: relative;
     margin-left: 20%;
 }
 
 .section-separator:nth-child(2) {
-    background: rgb(176, 5, 5);
+    background: rgb(184, 15, 10);
     clip-path: polygon(0 0%, 100% 20%, 100% 80%, 0 60%);
     padding: 12rem 20%;
 }
 
 .section-separator2:nth-child(2) {
-    background: rgb(176, 5, 5);
+    background: rgb(184,15,10);
     clip-path: polygon(100% 0%, 117% 51%, 0% 100%, 0% 33%);
     padding: 8rem 20%;
 }
@@ -109,7 +119,7 @@
 .intro {
     background: white;
     position: relative;
-    height: 800px;
+    height: 700px;
 }
 #inner-pic {
     border-radius: 50%;
@@ -117,7 +127,7 @@
     height: 240px;
     position: relative;
     margin: 20px;
-    bottom: 112px;
+    bottom: 76px;
 }
 
 .inner-description {
@@ -131,7 +141,7 @@
 }
 
 .inner-pic-holder:nth-child(2) {
-    background: rgb(176, 5, 5);
+    background: rgb(184, 15, 10);
     color: white;
     clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
     padding: 10rem 20%;
@@ -143,7 +153,7 @@
 /* ==== ABOUT ME ==== */
 .about-me {
     background-color: white;
-    height: 100%;
+    height: 850px;
     width: 100%; 
 }
 
@@ -193,7 +203,8 @@
 /* ==== SKILLS ==== */
 
 .skills {
-    height: 600px;
+    height: 800px;
+    padding-top: 100px;
 }
 
 .skills-content {
@@ -238,37 +249,37 @@
 .progress-bar.progress-bar.skill-1::after {
     background-color:  rgba(128, 0, 128, 0.849);
     border-radius: 20px;
-    left: 52%;
+    left: 40%;
 }
 .progress-bar.progress-bar.skill-2::after {
     background-color: rgb(81,43,212);
     border-radius: 20px;
-    left: 80%;
+    left: 75%;
 }
 .progress-bar.progress-bar.skill-3::after {
     background-color: red;
     border-radius: 20px;
-    left: 42%;
+    left: 28%;
 }
 .progress-bar.progress-bar.skill-4::after {
     background-color: rgb(255, 166, 0);
     border-radius: 20px;
-    left: 90%;
+    left: 88%;
 }
 .progress-bar.progress-bar.skill-5::after {
     background-color: rgb(242,146,33);
     border-radius: 20px;
-    left: 49%;
+    left: 36%;
 }
 .progress-bar.progress-bar.skill-6::after {
     background-color: rgb(37,75,221);
     border-radius: 20px;
-    left: 90%;
+    left: 88%;
 }
 .progress-bar.progress-bar.skill-7::after {
     background-color: rgb(239,216,29);
     border-radius: 20px;
-    left: 49%;
+    left: 36%;
 }
 
 
@@ -310,50 +321,55 @@
 
 .progress-bar.skill-1 span {
     position: absolute;
-    top: 352%;
-    right: 10%;
+    top: 335%;
+    right: 58%;
     color: purple;
 }
 .progress-bar.skill-2 span {
     position: absolute;
-    top: 352%;
-    right: 47%;
+    top: 335%;
+    right: 23%;
     color: rgb(81,43,212);
 }
 .progress-bar.skill-3 span {
     position: absolute;
-    top: 358%;
-    right: 57%;
+    top: 340%;
+    right: 70%;
     color: red;
 }
 .progress-bar.skill-4 span {
     position: absolute;
-    top: 358%;
-    right: 9%;
+    top: 340%;
+    right: 10%;
     color: rgb(255, 166, 0);
 }
 .progress-bar.skill-5 span {
     position: absolute;
-    top: 363%;
-    right: 50%;
+    top: 345%;
+    right: 62%;
     color: rgb(242,146,33);
 }
 .progress-bar.skill-6 span {
     position: absolute;
-    top: 363%;
-    right: 9%;
+    top: 345%;
+    right: 10%;
     color: rgb(37,75,221);
 }
 .progress-bar.skill-7 span {
     position: absolute;
-    top: 369%;
-    right: 50%;
+    top: 351%;
+    right: 62%;
     color: rgb(239,216,29);
 }
 
 /* ==== CONTACT ME ==== */
 .contact-me {
-    height: 600px;
+    height: 800px;
+}
+
+.contact-me a {
+    text-decoration: none;
+    color: rgb(184, 15, 10);
 }
 
 .inner-content {
@@ -438,6 +454,21 @@ textarea {
 
 input.ng-invalid.ng-touched {
     border: 1px solid red;
+}
+
+/* === FOOTER ==== */
+.footer {
+    background: rgb(52,58,64);
+    height: 100px;
+    width: 100%;
+    padding: 20px;
+    color: white;
+    margin-top: 40px;
+}
+
+.footer a {
+    color: rgb(169, 0, 0);
+    font-weight: 600;
 }
 
 
