@@ -3,6 +3,10 @@
     font-family: "Montserrat", sans-serif;
 }
 
+.hidden {
+    display: none !important;
+}
+
 /* ==== HEADER === */
 .main-wrapper-header {
     height: 150px;
@@ -34,6 +38,28 @@
     text-shadow: 1px 2px 2px black;
 }
 
+.panel-icons {
+    padding-top: 10px;
+    font-size: 12px;
+    margin: 8px;
+}
+.panel-icons a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.80);
+}
+.panel-icons a:hover {
+    color:white;
+    font-size: 14px;
+}
+.social-i {
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    opacity: 0.6;
+    height:20px;
+    width: 20px;
+    margin-right: 10px;
+}
+
 /* ==== BODY === */
 .max-container {
     padding: 40px 250px;
@@ -51,14 +77,14 @@
     background: 
     linear-gradient(
     rgba(184, 15, 10, 1),
-    rgba(164, 35, 30, 0.85),  
-    rgba(134, 12, 6, 0.75)
+    rgba(174, 25, 20, 0.80),  
+    rgba(144, 33, 27, 1)
     ),
     url("../images/bg/charlotte-bg-blkWhite.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center !important;
-    padding: 20px;
+    padding: 20px 40px;
 }
 
 .card li {
@@ -76,7 +102,7 @@
 .card-img {
     border-radius: 50% !important;
     height: 180px;
-    width: 50% !important;
+    width: 54% !important;
     padding: 10px;
 }
 
@@ -104,6 +130,7 @@
 }
 .user-description ul {
     line-height: 40px;
+    padding: 0;
 }
 .user-description li {
     color: rgba(255, 255, 255, 0.844);
@@ -117,9 +144,9 @@
     width: 400px;
     background: 
     linear-gradient(
-    rgba(134, 12, 6, .8),
-    rgba(134, 12, 6, 0.9),  
-    rgba(83, 2, 2, 1)
+        rgba(144, 33, 27, 1),
+        rgba(174, 25, 20, 0.80),  
+        rgba(144, 33, 27, 1)
     ),
     url("../images/bg/charlotte-bg-blkWhite.jpg");
     padding: 40px;
@@ -130,10 +157,37 @@
     font-weight: 400;
     font-size: 20px;
     text-shadow: 1px 1px 2px black;
+    color: white;
 }
 .user-profile p {
     font-size: 12px;
     text-shadow: 1px 1px 2px black;
+}
+
+.education-info strong {
+    font-size: 14px;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+
+/*==== BUTTONS ====*/
+.skills-btn {
+    border: 1px solid rgba(124, 124, 124, 0.85);
+    background: rgb(170, 58, 54);
+    margin: 4px;
+    border-radius: 25%;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.skills-btn a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 12px;
+}
+
+.skills-btn a:hover {
+    color: white;
+    font-size: 14px;
 }
 
 
@@ -279,7 +333,8 @@
 }
 .contact-me {
     height: 800px;
-    padding: 40px;
+    padding: 40px 40px 40px 0;
+    margin-bottom: 100px;
 }
 
 .contact-me a {
