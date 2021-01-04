@@ -1,2 +1,2 @@
 # kyang93.github.io
- My personal site
+third iteration of my portfolio using basic html/css/javascript and bootstrap
