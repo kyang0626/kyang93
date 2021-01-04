@@ -1,6 +1,7 @@
 /* Theme color:  rgb(184, 15, 10 */
 .main-wrapper {
     font-family: "Montserrat", sans-serif;
+    height: 100%;
 }
 
 .hidden {
@@ -60,7 +61,7 @@
     margin-right: 10px;
 }
 
-/* ==== BODY === */
+                                                        /* ==== BODY === */
 .max-container {
     padding: 40px 250px;
 }
@@ -192,9 +193,6 @@
 
 
 /* ==== RIGHT PANEL ====*/
-.row .user-panel {
-    padding-left: 40px;
-}
 
 .portfolio {
     height: 3800px;
@@ -207,6 +205,7 @@
     font-weight: 400;
     text-transform: uppercase;
     color: rgb(85,85,85);
+    padding-left: 40px;
 }
 
 .section-header {
@@ -253,7 +252,7 @@
     content: '';
     position: absolute;
     top: 24px;
-    left: 4%;
+    left: 4.2%;
     width: 8px;
     height: 8px;
     background: rgb(188, 15, 10);
@@ -321,19 +320,63 @@
     margin-left: 48px;
 }
 
+.projects a {
+    color: rgb(85,85,85);
+}
+
+#timeline-exp {
+    font-size: 16px;
+}
+
+.element-summary {
+    padding: 20px 0;
+}
+.element-summary ul {
+    list-style: outside;
+}
+
+.project-title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.project-title a:hover {
+    color: rgb(223, 7, 0);
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.portfolio-extended {
+    position: absolute;
+    left: 10%;
+
+}
+
+.sm-description {
+    padding-bottom: 20px;
+}
+
 #bootcamp-proj {
     height: 250px;
 }
-
-/*==== ABOUT ME ====*/
+                                                /*==== ABOUT ME ====*/
     
 .aboutme {
     height: 1000px;
-    padding-top: 80px;
+    padding: 200px 200px;
+}
+
+.aboutme-content {
+    padding: 40px 100px;
+}
+
+.bio {
+    line-height: 1.8;
+    font-size: 16px;
 }
 .contact-me {
-    height: 800px;
-    padding: 40px 40px 40px 0;
+    height: 1000px;
+    padding: 200px 200px;
     margin-bottom: 100px;
 }
 
@@ -352,11 +395,6 @@
     padding: 0 20px;
     color: rgb(0, 0, 0);
     font-size: 14px;
-}
-
-form {
-    padding: 40px 0;
-    position: relative;
 }
 
 .form-group {
