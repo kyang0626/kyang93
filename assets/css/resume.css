@@ -1,0 +1,64 @@
+.resume {
+    margin: 0;
+    background: rgba(0, 0, 0, 0.864);
+}
+
+.resume-page {
+    height: 1040px;
+    width: 900px;
+    padding: 80px 80px 60px;
+    background: white;
+    margin: 80px auto;
+    box-shadow: 2px 2px 2px rgb(177, 177, 177);
+}
+
+.innerpage {
+    line-height: 1px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.innerpage span {
+    font-weight: bold;
+}
+
+.section {
+    margin-top: 40px;
+}
+
+.title {
+    font-style: italic;
+}
+
+.date {
+    float: right;
+    font-weight: normal;
+}
+
+.exp-ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.exp-ul li {
+    padding-bottom: 1px;
+}
+
+.job-duty {
+    list-style: square;
+    margin-top: 10px;
+}
+
+.duty-list {
+    line-height: 1.5;
+}
+
+#projects h4 {
+    padding-left: 40px;
+    line-height: 1.5;
+}
+
+#projects a {
+    font-weight: normal;
+}
