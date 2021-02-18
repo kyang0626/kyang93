@@ -34,9 +34,9 @@
 }
 
 .nav a:hover {
-    font-size: 18px;
-    color: white;
-    text-shadow: 1px 2px 2px black;
+    color: rgb(85,85,85);
+    /* text-shadow: 1px 2px 2px black; */
+    border-bottom: 2px solid rgb(184, 15, 10);
 }
 
 .panel-icons {
@@ -122,6 +122,11 @@
     text-shadow: 1px 1px 2px black;
 }
 
+.profile-ul span {
+    float: right;
+    font-weight: bold;
+}
+
 .card hr {
     color: white;
 }
@@ -174,7 +179,7 @@
 /*==== BUTTONS ====*/
 .skills-btn {
     border: 1px solid rgba(124, 124, 124, 0.85);
-    background: rgb(170, 58, 54);
+    background: rgb(170, 58, 54) !important;
     margin: 4px;
     border-radius: 25%;
     color: rgba(255, 255, 255, 0.8);
@@ -194,10 +199,6 @@
 
 /* ==== RIGHT PANEL ====*/
 
-.portfolio {
-    height: 3800px;
-    padding-left: 40px;
-}
 #section-label {
     height: 50px;
     width: 100%;
@@ -216,6 +217,7 @@
 }
 .portfolio-content {
     font-size: 14px;
+    padding-left: 40px;
 }
 
 .portfolio-timeline {
@@ -341,8 +343,7 @@
 }
 
 .project-title a:hover {
-    color: rgb(223, 7, 0);
-    font-size: 22px;
+    color: rgb(184, 15, 10);
     font-weight: 400;
 }
 
@@ -363,7 +364,7 @@
     
 .aboutme {
     height: 1000px;
-    padding: 200px 200px;
+    
 }
 
 .aboutme-content {
@@ -374,15 +375,22 @@
     line-height: 1.8;
     font-size: 16px;
 }
+
+                                                /*==== CONTACT ME ====*/
+
 .contact-me {
     height: 1000px;
-    padding: 200px 200px;
+    padding: 0px 0px;
     margin-bottom: 100px;
 }
 
 .contact-me a {
     text-decoration: none;
     color: rgb(184, 15, 10);
+}
+
+.contact-me a:hover {
+    color: red;
 }
 
 .inner-content {
@@ -417,10 +425,14 @@ textarea {
     color: black;
 }
 
-.btn-primary {
-    background: rgba(0, 110, 255, 0.89);
+/* .btn-primary {
+    background: rgba(185,15,10);
     color: white;
     font-size: 14px;
+} */
+button {
+    background: rgb(184, 15, 10) !important;
+    border: none !important;
 }
 
 .form-control {
@@ -446,6 +458,9 @@ input.ng-invalid.ng-touched {
     width: 100%;
     padding: 20px;
     color: white;
+    margin: 0;
+    margin-top: 100px;
+    font-size: 12px;
 }
 
 .footer a {
