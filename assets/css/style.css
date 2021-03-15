@@ -8,6 +8,10 @@
     display: none !important;
 }
 
+.main-content {
+    position: relative;
+}
+
 /* ==== HEADER === */
 .main-wrapper-header {
     height: 150px;
@@ -63,7 +67,7 @@
 
                                                         /* ==== BODY === */
 .max-container {
-    padding: 40px 250px;
+    margin: 40px 250px;
 }
 
 .row {
@@ -392,7 +396,9 @@
 .contact-me a:hover {
     color: red;
 }
-
+.contact-me label {
+    padding-bottom: 4px;
+}
 .inner-content {
     padding-top: 40px;
 }
@@ -468,5 +474,30 @@ input.ng-invalid.ng-touched {
     font-weight: 600;
 }
 
+/* ================== Media Queries ================= */
+
+@media screen and (min-width: 1160px) {
+    .max-container {
+        margin: 0 auto;
+        max-width: 1400px;
+        padding: 32px 32px;
+    }
+
+    /* .portfolio-timeline::before {
+        display: none;
+    }
 
 
+    .portfolio-timeline ul li.timeline-element::before {
+        display: none;
+    }
+
+    .li-date {
+        right: 15%;
+        font-size: 13px;
+    }
+
+    .element-content {
+        padding-left: 0;
+    } */
+}

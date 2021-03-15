@@ -3,9 +3,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kong Yang - Contact Me</title>
-    <!-- Index.js -->
-    <script src="assets/js/index.js"></script>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+        crossorigin="anonymous"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+        emailjs.init("user_6U62yiTFXXsXFmERUcBuc");
+        })();
+        </script>
+    <!-- Index.js -->
+    <script src="assets/js/main.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600&display=swap" rel="stylesheet">
     <link rel="icon" href="./assets/images/icons/k.png" type="image/x-icon">
@@ -105,48 +115,35 @@
                                                 <p><img src="assets/images/icons/github.png" alt="" class="contact-icon"> <a href="https://github.com/kyang0626" target="blank">kyang0626</a></p>
                                             </div>
                                             <div class="col-xl-7 col-lg-7 col-md-12">
-                                                    <div class="form-group">
-                                                        <label for="nameInput">Name</label>
-                                                        <input 
-                                                            type="text" 
-                                                            class="form-control" 
-                                                            id="name" 
-                                                            name="name" 
-                                                            placeholder="ex. John Doe" 
-                                                            ngModel
-                                                            required
-                                                            #name="ngModel"
-                                                        >
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label for="inputEmail">Email address</label>
-                                                        <input 
-                                                            type="text" 
-                                                            class="form-control" 
-                                                            id="email" 
-                                                            name="email" 
-                                                            placeholder="ex. johnny32@gmail.com" 
-                                                            ngModel
-                                                            required
-                                                            email
-                                                            #email="ngModel"
-                                                        >
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label for="subjectInput">Subject</label>
-                                                        <input 
-                                                            type="text" 
-                                                            class="form-control" 
-                                                            id="subject" 
-                                                            name="subject" 
-                                                            placeholder="ex. Hello" 
-                                                            ngModel>
-                                                        </div>
-                                                    <div class="form-group">
-                                                        <textarea name="message" class="textarea" placeholder="Message" ngModel></textarea>
-                                                    </div>
-                                                    <button type="submit" class="btn btn-primary">Submit</button>
-                                                </form>
+                                                <div id="toName" style="display: none;" type="text">Kong</div>
+                                                <div class="form-group">
+                                                    <label for="nameInput">Full Name</label>
+                                                    <input 
+                                                        type="text" 
+                                                        class="form-control" 
+                                                        id="fromName" 
+                                                        name="name" 
+                                                        placeholder="ex. John Doe" 
+                                                    >
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="inputEmail">Email address</label>
+                                                    <input 
+                                                        type="text" 
+                                                        class="form-control" 
+                                                        id="email" 
+                                                        name="email" 
+                                                        placeholder="ex. johnny32@gmail.com" 
+                                                    >
+                                                </div>
+                                                <div class="form-group">
+                                                    <textarea name="message" class="textarea" placeholder="Message" id="message"></textarea>
+                                                </div>
+                                                <button onclick="sendMail()" type="submit" class="btn btn-primary submit">Submit</button>
+                                                <!--<input type="text" id="toName" placeholder="enter to name">
+                                                <input type="text" id="fromName" placeholder="enter from name">
+                                                <input type="text" id="message" placeholder="enter to message">
+                                                <button onclick="sendMail()">Send</button> -->
                                             </div>
                                         </div>
                                     </div>   
@@ -159,6 +156,7 @@
         <div class="footer">
             <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
             <p>Designed & Built by Kong Yang</p>
+            <p>Host by GitHub</p>
         </div> 
     </div>
    
