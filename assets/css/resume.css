@@ -65,6 +65,7 @@ p {
 .person-title {
     font-size: 12px;
     line-height: 1.8;
+    padding-top: 16px;
 }
 .person-title h4 {
     font-size: 26px;
