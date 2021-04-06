@@ -6,33 +6,119 @@
 .resume-page {
     height: 1040px;
     width: 900px;
-    padding: 80px 80px 60px;
     background: white;
     margin: 80px auto;
     box-shadow: 2px 2px 2px rgb(177, 177, 177);
+    font-size: 12px;
+    font-family: sans-serif;
+    font-weight: normal;
 }
 
 .innerpage {
-    line-height: 1px;
-    margin-right: 20px;
-    margin-left: 20px;
+    font-size: 12px;
+    height: 1040px !important;
 }
 
 .innerpage span {
     font-weight: bold;
 }
-
-.section {
-    margin-top: 40px;
+hr {
+    margin: 1px !important;
+    margin-bottom: 1rem !important;
 }
+h4 {
+    margin-bottom: 0px !important;
+}
+p {
+    margin-bottom: 0px !important;
+}
+
+/* =============== HEADER ====================*/
+
+.card-img {
+    width: 160px !important;
+    height: 150px;
+    border-radius: 100% !important;
+    padding-left: 20px;
+}
+
+.header {
+    width: 100%;
+    height: 240px;
+    padding: 20px 40px;
+    margin: 0px;
+    background-color: rgb(185, 15, 12);
+    font-size: 12px;
+    color: white;
+}
+
+.header a {
+    color: white;
+    font-weight: 200;
+    text-decoration: none;
+}
+
+.header a:hover {
+    color:rgb(245, 80, 77);
+}
+
+.person-title {
+    font-size: 12px;
+    line-height: 1.8;
+}
+.person-title h4 {
+    font-size: 26px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+}
+ .person-title .p-title {
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+}
+.col-3 {
+    height: 100px;
+    padding-top: 20px;
+}
+.col-lg-6 { 
+    line-height: 2;
+}
+.resume-info {
+    height: 100px;
+    border-left: 1px solid gray;
+    padding: 10px 0 0 20px;
+}
+.section {
+    margin-top: 10px;
+    line-height: 1.5;
+}
+.section h4 {
+    color:rgb(185, 15, 12);
+}
+.section h6 {
+    font-weight: 400;
+}
+
+/* =============== EXPERIENCE ====================*/
 
 .title {
     font-style: italic;
 }
 
+.col-8 {
+    padding: 10px 20px !important;
+}
+.col-4 {
+    padding: 10px 20px;
+    background: lightgray;
+    height: 800px;
+}
+
 .date {
     float: right;
     font-weight: normal;
+    font-size: 14px;
 }
 
 .exp-ul{
@@ -45,6 +131,15 @@
     padding-bottom: 1px;
 }
 
+li.job-list {
+    padding-bottom: 10px;
+}
+
+.job-list h6 {
+    font-weight: bold;
+    margin-bottom: 2px !important;
+}
+
 .job-duty {
     list-style: square;
     margin-top: 10px;
@@ -54,11 +149,33 @@
     line-height: 1.5;
 }
 
+/* =============== PROJECTS ====================*/
 #projects h4 {
-    padding-left: 40px;
     line-height: 1.5;
 }
 
 #projects a {
     font-weight: normal;
+}
+
+#projects p {
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+#projects h6 {
+    font-weight: 600;
+    font-size: 14px;
+}
+#projects a {
+    text-decoration: none;
+    color: rgb(185, 15, 12);
+}
+
+/* =============== Education ====================*/
+#education h6 {
+    font-size: 14px;
+    font-weight: 400;
+}
+#education p {
+    font-weight: bold;
 }
