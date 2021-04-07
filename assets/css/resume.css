@@ -4,7 +4,7 @@
 }
 
 .resume-page {
-    height: 1040px;
+    height: 1100px;
     width: 900px;
     background: white;
     margin: 80px auto;
@@ -15,7 +15,7 @@
 }
 
 .innerpage {
-    font-size: 12px;
+    font-size: 14px;
     height: 1040px !important;
 }
 
@@ -36,20 +36,19 @@ p {
 /* =============== HEADER ====================*/
 
 .card-img {
-    width: 160px !important;
+    width: 150px !important;
     height: 150px;
     border-radius: 100% !important;
-    padding-left: 20px;
 }
 
 .header {
     width: 100%;
-    height: 240px;
+    height: 220px;
     padding: 20px 40px;
     margin: 0px;
-    background-color: rgb(185, 15, 12);
+    background-color: rgb(191, 44, 42);
     font-size: 12px;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 .header a {
@@ -71,14 +70,14 @@ p {
     font-size: 26px;
     letter-spacing: 1px;
     text-transform: uppercase;
-    font-weight: 400;
-    color: rgb(255, 255, 255);
+    font-weight: 600;
+    color: rgb(56, 56, 56);
 }
  .person-title .p-title {
     font-size: 18px;
-    color: rgb(255, 255, 255);
+    color: rgb(68, 68, 68);
 }
-.col-3 {
+.col-lg-3 {
     height: 100px;
     padding-top: 20px;
 }
@@ -107,13 +106,13 @@ p {
     font-style: italic;
 }
 
-.col-8 {
+.col-xl-8 {
     padding: 10px 20px !important;
 }
-.col-4 {
+.col-xl-4 {
     padding: 10px 20px;
-    background: lightgray;
-    height: 800px;
+    background: rgba(211, 211, 211, 0.5);
+    height: 900px;
 }
 
 .date {
@@ -134,6 +133,7 @@ p {
 
 li.job-list {
     padding-bottom: 10px;
+    line-height: 1;
 }
 
 .job-list h6 {
@@ -180,3 +180,66 @@ li.job-list {
 #education p {
     font-weight: bold;
 }
+
+/* =============== Hobbies ====================*/
+.hobbies {
+    padding-top: 40px;
+}
+
+
+
+
+
+/* ================== Media Queries ================= */
+
+@media screen and (max-width: 992px) {
+
+    .header {
+        height: 340px;
+        text-align: center;
+        margin: 0;
+        padding: 20px 0;        
+    }
+
+    .col-lg-3 {
+        height: 150px;
+        padding: 0;
+    }
+    .person-title {
+        margin: 0;
+    }
+    #objective {
+        width: 60%;
+        margin-left: 22%;
+    }
+    .resume-info p {
+        display: inline;
+        border: none;
+    }
+    .resume-info p::after{
+        content: " |";
+        color: black;
+    }
+    .resume-page {
+        margin: 0 !important;
+        width: 100%;
+        height: 2000px;
+    }
+    
+    .col-xl-4 {
+        background: white;
+    }
+}
+
+/* @media screen and (max-width: 990px) {
+    .resume-page {
+        width: 100%;
+    }
+    .innerpage .container {
+        margin: 0 !important;
+    }
+
+    .innerpage .row {
+        width: 100%;
+    }
+} */
