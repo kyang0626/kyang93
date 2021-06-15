@@ -112,7 +112,7 @@ p {
 .col-xl-4 {
     padding: 10px 20px;
     background: rgba(211, 211, 211, 0.5);
-    height: 900px;
+    height: 880px;
 }
 
 .date {
@@ -228,6 +228,12 @@ li.job-list {
     
     .col-xl-4 {
         background: white;
+    }
+    #experience {
+        padding-top: 20px;
+    }
+    .right-panel {
+        height: 100%;
     }
 }
 
