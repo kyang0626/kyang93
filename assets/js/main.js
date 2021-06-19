@@ -13,3 +13,17 @@ function sendMail() {
         console.log("success", res.status);
     })
 }
+
+function showInfo() {
+    document.getElementById("user-profile").style.display = "block";
+    document.getElementById("show-msg").style.display = "none";
+    document.getElementById("hide-msg").style.display = "block";
+    console.log("button is working!");
+}
+
+function hideInfo() {
+    document.getElementById("user-profile").style.display = "none";
+    document.getElementById("hide-msg").style.display = "none";
+    document.getElementById("show-msg").style.display = "block";
+}
+

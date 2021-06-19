@@ -67,7 +67,7 @@
 
                                                         /* ==== BODY === */
 .max-container {
-    margin: 40px 250px;
+    margin: 40px 200px;
 }
 
 .row {
@@ -133,6 +133,31 @@
 
 .card hr {
     color: white;
+}
+
+.show-info {
+    height: 60px;
+    background: 
+    linear-gradient(
+        rgba(144, 33, 27, 1),
+        rgba(174, 25, 20, 0.80),  
+        rgba(144, 33, 27, 1)
+    ),
+    url("../images/bg/charlotte-bg-blkWhite.jpg");
+    display: none;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+
+.show-info p {
+    padding-top: 20px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.show-info p:hover {
+    text-decoration: underline;
 }
 
 .user-description {
@@ -508,7 +533,7 @@ input.ng-invalid.ng-touched {
         width: 350px;
     }
     .card-img {
-        width: 160px !important;
+        width: 180px !important;
         height: 180px !important;
     }
     .portfolio-timeline::before, .portfolio-timeline ul li.timeline-element::before  {
@@ -550,12 +575,15 @@ input.ng-invalid.ng-touched {
     .card {
         width: 800px;
     }
-
     .user-profile {
         width: 800px;
         margin: 0;
+        display: none;
     }
-
+    .show-info {
+        display: block;
+        width: 800px;
+    }
     .user-panel {
         padding-top: 100px;
         width: 100% !important;
@@ -573,4 +601,39 @@ input.ng-invalid.ng-touched {
         padding-bottom: 100px;
     }
 
+}
+
+@media screen and (max-width: 500px) {
+    .max-container {
+        margin: 0;
+    }
+    .header {
+        height: 40px;
+    }
+    ul {
+        margin: 0;
+    }
+
+    .col-md-5 {
+        width: 500px;
+    }
+    .card {
+        width: 100%;
+    }
+
+    .col-md-7 {
+        width: 500px;
+    }
+
+    .show-info {
+        width: 500px;
+    }
+
+    #bootcamp-proj {
+        height: 218px;
+    }
+
+    .aboutme {
+        height: 1600px;
+    }
 }
